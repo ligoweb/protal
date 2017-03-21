@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><title>index</title><meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"><link rel=stylesheet href=css/style.css></head><body><div class=wrapper><div class=banner><img src=images/banner@3x.jpg></div><div class=btns><div class=btn><span>打开万园通APP</span></div><div class=btn><i></i><span>免费下载安卓版</span></div><div class=btn><i></i><span>免费下载苹果版</span></div></div><div class=footer><span>©2016 深圳市万园通园区运营管理有限公司.版权所有</span></div></div></body><script>
+	var btns=document.getElementsByClassName('btn');
+	btns[0].onclick=function(){
+		var ua = navigator.userAgent;
+            if (ua.match(/iPhone|iPod/i) != null) {
+                document.location = 'WanYuanTong://';            
+            }
+            else if (ua.match(/Android/i) != null) {
+                document.location = 'jxd://wyt.app/openwith'; 
+			}
+	}
+	btns[1].onclick=function(){document.location = 'http://app.szwytyq.com/down.aspx';};
+	btns[2].onclick=function(){document.location = 'http://app.szwytyq.com/down.aspx';};
+</script></html>
