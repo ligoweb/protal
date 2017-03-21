@@ -21,15 +21,15 @@ var msg=document.getElementById('message');
 		var check=document.getElementsByName('check')[0].checked
         if(user==null || user=='')
         {
-            msg.innerHTML = "用户名不能为空"; 
+            msg.innerHTML = "用户名不能为空!"; 
         }
         else if(pass=='' || pass ==null)
         {
-            msg.innerHTML = "密码不能为空";
+            msg.innerHTML = "密码不能为空!";
         }
         else if(check==false)
         {
-            msg.innerHTML = "请确认免责条款";
+            msg.innerHTML = "请确认免责条款!";
         }
         else{
         	window.location.href="success.html"
